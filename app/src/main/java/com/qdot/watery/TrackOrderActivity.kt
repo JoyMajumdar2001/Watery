@@ -18,7 +18,7 @@ import java.util.*
 
 class TrackOrderActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityTrackOrderBinding
-    private val MAPVIEW_BUNDLE_KEY = "AIzaSyBl4ReTeCNIbTVwgLIfvZ4LdpPaoWwkawA"
+    private val MAPVIEW_BUNDLE_KEY = "Your api key"
     private lateinit var orderDetail : Order
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
