@@ -51,3 +51,12 @@ Here a delivery partner update that order status in Appwrite's Databse which is 
 
 
 ![SS13](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5l0cmj579ol5zrgar1mp.png)
+
+##### Used tech
+
+- [Appwrite](https://appwrite.io/)
+- [Razorpay](https://razorpay.com/)
+- [OkHttp](https://square.github.io/okhttp/)
+- [Mock Up](https://mockuphone.com/)
+- [Leku](https://github.com/AdevintaSpain/Leku)
+- [Maps](https://www.google.com/maps)
