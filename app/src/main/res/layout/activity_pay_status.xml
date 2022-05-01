@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".PayStatusActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/stsImg"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/ic_baseline_done_outline"
+        android:layout_marginBottom="8dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stsText"
+        android:text="Your order is successful"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginBottom="8dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doneButton"
+        android:gravity="center"
+        android:text="Take me to home"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrackOrderActivity">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_peekHeight="100dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_up_arrow"
+            android:layout_gravity="center"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            style="@style/Widget.Material3.CardView.Filled">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/orderStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Your order has been shipped!"
+                style="@style/TextAppearance.Material3.TitleMedium"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="22 April 2022"
+            style="@style/TextAppearance.Material3.LabelMedium"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/delLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_person_pin"
+                android:layout_marginEnd="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/delName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ayan Paral"
+                style="@style/TextAppearance.Material3.LabelLarge"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/delText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="will deliver your water today ASAP"
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+            android:layout_marginTop="2dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/shoppingCart"
+        android:icon="@drawable/ic_baseline_shopping_cart"
+        android:title="Cart"
+        android:contentDescription="@string/app_name"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/orderList"
+        android:icon="@drawable/ic_order_list"
+        android:title="Orders"
+        android:contentDescription="@string/app_name"
+        app:showAsAction="ifRoom" />
+</menu>

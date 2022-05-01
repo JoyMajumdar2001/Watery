@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/orderItemsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottle 2"
+            style="@style/TextAppearance.Material3.LabelMedium"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/currentStatusOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order created"
+            style="@style/TextAppearance.Material3.LabelMedium"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/addressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            style="@style/TextAppearance.Material3.LabelMedium"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/orderStatusBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept order"
+            android:layout_marginTop="8dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

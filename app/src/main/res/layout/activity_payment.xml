@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your bill"
+        style="@style/TextAppearance.Material3.TitleLarge"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/orderIdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#524sv52eIN"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="124.88 ₹"
+            style="@style/TextAppearance.Material3.TitleMedium"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service tax"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/serviceTaxText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14.88 ₹"
+            style="@style/TextAppearance.Material3.TitleMedium"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery fees"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/deliveryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40.00 ₹"
+            style="@style/TextAppearance.Material3.TitleMedium"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total price"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalPriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="230.66 ₹"
+            style="@style/TextAppearance.Material3.TitleMedium"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select payment method"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/codBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cash on delivery"
+        android:layout_marginBottom="4dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onlineBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

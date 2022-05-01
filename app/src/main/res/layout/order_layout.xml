@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/orderIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#qwe24nj"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_marginBottom="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/itemsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water (5lit) 2"
+            style="@style/TextAppearance.Material3.LabelMedium"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/orderDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22 April 2022"
+                style="@style/TextAppearance.Material3.BodySmall"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/orderPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="234.99 INR"
+                android:textStyle="bold"
+                style="@style/TextAppearance.Material3.BodyMedium"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/orderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order confirmed"
+                style="@style/TextAppearance.Material3.TitleMedium"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/trackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

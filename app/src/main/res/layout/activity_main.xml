@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+            app:title="@string/app_name"
+            app:subtitle="Start a journey with us"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="?attr/colorSurface"
+            app:subtitleTextColor="?attr/colorSurface"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_hideable="false"
+        android:background="@drawable/sheet_bg"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="3dp"
+            android:background="?attr/colorPrimary"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/customerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join as a customer"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/delPartnerLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deliver partner"
+            android:layout_weight="2" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By logging in, you are agreeing to the Terms of Service"
+            style="@style/TextAppearance.Material3.LabelMedium"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

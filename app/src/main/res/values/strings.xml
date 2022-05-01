@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Watery</string>
+    <string name="title_activity_location">LocationActivity</string>
+
+    <string name="RZP_KEY">rzp_test_koPT964bLXJyP4</string>
+    <string name="RZP_PASSWORD">JNX5urUzplXwjyDTgjhnQZKo</string>
+</resources>

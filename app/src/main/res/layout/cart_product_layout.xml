@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/productImage"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/ic_bottle_svgrepo_com"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water jar"
+            style="@style/TextAppearance.Material3.BodyMedium"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 litre"
+            style="@style/TextAppearance.Material3.BodySmall"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/plusBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:text="+"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/inc_btn_bg"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/minusBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:text="-"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/inc_btn_bg"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
